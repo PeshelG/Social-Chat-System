@@ -1,0 +1,11 @@
+//For userlist
+<div class="users_list">
+	<a href="#">
+		<img src="images/joker_44-wallpaper-1366x768.jpg">
+		<div class="user">
+		<label>Peshel Gomo</label>
+		<label>This is the last message...</label>
+		</div>
+		<p>&#9673</p>
+	</a>
+	</div>

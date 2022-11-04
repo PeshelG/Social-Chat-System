@@ -1,0 +1,330 @@
+/*
+Theme Name: Author Writer
+Theme URI: https://www.themespride.com/themes/free-author-wordpress-theme/
+Author: ThemesPride
+Author URI: https://www.themespride.com/
+Description: Author writer is an amazing theme designed for authors, writers, book reviewers, E-book libraries, publishing house, publishing agency, personal blog, book store, and all such related websites. It is a multi-concept, modern and sophisticated WordPress theme. It is performance-optimized and highly flexible to match your taste, all the way from a modern personal blog for a website author to a news magazine or niche blogging websites. With this theme you get more than a high-quality personal blog with a simple and clean look. Moreover you get many great features to fully customize your site. Its mobile-friendly layout fits perfectly in all devices screen sizes giving it a professional look. Your users can translate it into any language as it is translation-ready and supports RTL layout. You can add available shortcodes or custom codes like CSS/JS if you know coding. It is SEO-ready so you don’t have to worry about your site’s search engine ranking. The codes used are fully optimized, clean and secure. It is compatible with your favourite WordPress plugins – WooCommerce, Yoast, MailChimp and many more. Also, there are unlimited sidebars, sticky sidebars, highlighted widgets, pagination types, custom widgets, one-click demo content import, one-click updates and more!
+Version: 0.2
+Tested up to: 5.8
+Requires PHP: 7.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: author-writer
+Tags: wide-blocks, block-styles, one-column, two-columns, right-sidebar, left-sidebar, three-columns, four-columns, grid-layout, custom-colors, custom-header, custom-background, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, post-formats, threaded-comments, education, food-and-drink, e-commerce
+
+Author Writer WordPress Theme, Copyright 2022 ThemesPride
+Author Writer is distributed under the terms of the GNU GPL
+
+*/
+body{
+	
+	background-color:#CCF6FF;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+}
+.signup{
+	margin-top: 3vh;
+	background-color: white;
+	width: 350px;
+	padding:10px 10px 2px 10px;
+	border-radius: 5px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.signup h2{
+	background-color:#2F2F2F;
+	padding: 18px;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	margin: auto;
+}
+.signup form input{
+	height: 25px;
+	width: 100%;
+	margin-top: 2px;
+	outline: none;
+}
+form .field{
+	display: flex;
+	flex-direction: column;
+	margin-top: 7px;
+}
+form .field.error{
+	background-color: #FDA6A7;
+	color: #830002;
+	padding: 10px;
+	border-radius: 2px;
+	border-color: #F80E12;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.btn{
+	color: white;
+	background-color:#2F2F2F;
+	border-radius: 5px;
+	border-style: none;
+	margin-top: 10px;
+	width: 100%;
+	font-size: 18px;
+	height: 40px;
+}
+.btn:hover{
+	background-color:#494949;
+}
+.signup .user_name{
+	display: flex;
+	margin: 5px;
+}
+.field span.show_pass{
+	margin-left: auto;
+	margin-right: 5px;
+	margin-top: -25px;
+	cursor: pointer;
+	
+}
+
+.user_name .field:first-child{
+	margin-right: 5px;
+	margin-left: -5px;
+}
+.user_name .field:last-child{
+	margin-left: 5px;
+	margin-right: -5px;
+}
+
+/*Users code*/
+.wrapper{
+	margin-top: 3vh;
+	background-color: white;
+	width: 350px;
+	padding:2px ;
+	border-radius: 5px;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header{
+	display: flex;
+	align-items: center;
+	margin: 5px 3px 5px 5px; 
+	padding-bottom: 15px;
+	border-bottom: solid 1px #A0A0A0;
+	
+}
+header a{
+	text-decoration: none;
+	color: black;
+	margin-right: 5px; 
+	font-size: 20px;
+}
+header label{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	color: #767676;
+	margin-top: 2px;
+}
+header label:last-child{
+	font-size: 85%;
+}
+header img{
+	margin-left: 5px;
+	object-fit: cover;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+header a.log_out{
+	float: right;
+	margin-left: auto;
+	color: white;
+	background-color:#2F2F2F;
+	border-radius: 5px;
+	border-style: none;
+	margin-top: 5px;
+	width: 19%;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+}
+.btn_logout a{
+	color: white;
+}
+.search{
+	display: flex;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 0px 2px 2px 0px;
+}
+.search input{
+	width:calc(100% - 40px);
+	height: 25px;
+	float: left;
+	pointer-events: auto;
+	transition: all 0.2s ease;
+}
+
+.search span{
+	width:calc(100% - 40px);
+	height: 25px;
+	float: left;
+	margin-left: 20px;
+	font: bolder;
+	font-size: 20px;
+	display: none;
+}
+.search button{
+	width: auto;
+	float:right;
+	background-color: #333;
+	outline: none;
+	border-radius: 0px 5px 5px 0px;
+	border: none; 	
+}
+.list::-webkit-scrollbar{
+	width: 0px;
+}
+.list{
+	max-height: 350px;
+	overflow-y: auto;
+	width: 100%;
+}
+.users_list{
+	margin-top: 3px;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+.users_list a{
+	padding: 5px;
+	text-decoration: none;
+	margin-bottom: 15px;
+	page-break-after: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+	background-color: rgb(241, 241, 241);
+	width: 100%;
+	border-radius: 5px;
+}
+.users_list a:last-child{
+	border: none;
+	margin-bottom: 0;
+} 
+
+.users_list .user{
+	float:left;
+	display: flex;
+	flex-direction: column;
+	color: #555555;
+	margin: 5px;
+}
+.users_list .user label:first-child{
+	color: black;
+	font-weight: 100;
+}
+.users_list .user label:last-child{
+	font-size: 13px;
+}
+.users_list img{
+	float: left;
+	margin-left: 5px;
+	object-fit: cover;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.users_list p{
+	float: right;
+	margin-left: calc(100% -2px);
+	font-size: 10px;
+	color: #00D77C;
+}
+
+/*Chat Code*/
+.chat-box{
+	height: 350px;
+	background-color: #f7f7f7;
+	padding: 10px 5px 20px 5px;
+	overflow-y: auto;
+	/*box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+		inset 0 -32px 32px -32px rgb(0 0 0 / 5%);*/
+}
+.chat-box::-webkit-scrollbar{
+	width:0px;
+}
+.chat p{
+	justify-content: center;
+	margin: 1px 0px 1px 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.chat-box .outgoing{
+	display: flex;
+	align-items: center;
+}
+.outgoing p{
+	color: white;
+	background-color: #333;
+	padding: 5px;
+}
+.chat-box .chat{
+	word-wrap:break-word;
+	padding: 1px 2px;
+}
+.chat-box .outgoing .details p{
+	border-radius: 10px 10px 0px 10px; 
+	
+}
+.outgoing .details{
+	margin-left: auto;
+	max-width: calc(100% - 100px);	
+}
+.chat.incoming{
+	display: flex;
+	align-items: center;
+}
+.incoming .details p{
+	color: #333;
+	background-color: white;
+	padding: 5px;
+	border-radius: 10px 10px 10px 0px; 
+}
+.incoming .details{
+	margin-right: auto;
+	max-width: calc(100% - 100px);	
+}
+.typing-area button{
+	font-size: 18px;
+}
+.typing-area{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+	padding: 5px 10px;
+	
+}
+
+.typing-area form input{
+	height: 25px;
+	width: 290px;
+	outline: none;
+	border-radius: 5px 0px 0px 5px;
+	padding: 2px;
+	border: 1px solid;
+	font-size: 15px;
+	float: left;
+	
+}
+.typing-area form button{
+	
+	padding: 4px 5px;
+	background-color: #333;
+	color: white;
+	outline: none;
+	border-radius: 0px 5px 5px 0px;
+	border-style: none;
+	float: right;
+}
+
+
